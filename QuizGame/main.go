@@ -32,6 +32,7 @@ func main() {
 
 	var correctAnswers int
 	var failedAnswers int
+
 	go func() {
 		quiz(file, &correctAnswers, &failedAnswers)
 		done <- true
